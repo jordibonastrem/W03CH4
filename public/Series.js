@@ -1,8 +1,12 @@
+/* eslint-disable no-new */
 import Componente from "./Componente.js";
+import Serie from "./Serie.js";
 
 class Series extends Componente {
-  constructor(parentElement) {
+  series;
+  constructor(parentElement, series) {
     super(parentElement, "series", "section");
+    this.series = series;
     this.generateHtml();
   }
 
@@ -31,6 +35,11 @@ class Series extends Componente {
           </section>
         </section>
     `;
+
+    const seriesList = document.querySelector(".series-list");
+    this.series.map((serie) => {
+      new Serie(seriesList, serie);
+    });
   }
 }
 
