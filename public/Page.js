@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import Componente from "./Componente.js";
 import Form from "./Form.js";
 import Series from "./Series.js";
@@ -17,6 +18,9 @@ class Page extends Componente {
       <main class="main">
       </main>
     </div>`;
+
+    const container = document.querySelector(".main");
+    new Form(container);
   }
 }
 
