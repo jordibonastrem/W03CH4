@@ -9,11 +9,10 @@ describe("Given a form class", () => {
       // Act
       // eslint-disable-next-line no-new
       new Form(container);
-      console.log(container.querySelector("section.form"));
-      const pFound = container.querySelector("section.form");
+      const sFound = container.querySelector("section.form");
 
       // Assert
-      expect(pFound).not.toBeNull();
+      expect(sFound).not.toBeNull();
     });
   });
 });

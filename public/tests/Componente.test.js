@@ -11,7 +11,6 @@ describe("Given a component class", () => {
 
       // Act
       new Componente(container, className, tag);
-      console.log(container.querySelector("p.patata"));
       const pFound = container.querySelector("p.patata");
 
       // Assert
@@ -27,11 +26,10 @@ describe("Given a component class", () => {
 
       // Act
       new Componente(container, className);
-      console.log(container.querySelector("div.jordi"));
-      const pFound = container.querySelector("div.jordi");
+      const dFound = container.querySelector("div.jordi");
 
       // Assert
-      expect(pFound).not.toBeNull();
+      expect(dFound).not.toBeNull();
     });
   });
 });
