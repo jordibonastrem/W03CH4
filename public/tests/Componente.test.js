@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import Componente from "../Componente";
 
 describe("Given a component class", () => {
