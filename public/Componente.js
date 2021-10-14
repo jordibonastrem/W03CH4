@@ -7,7 +7,7 @@ class Componente {
 
   htmlTag;
 
-  constructor(parentElement, htmlTag = "div", className) {
+  constructor(parentElement, className, htmlTag = "div") {
     this.parentElement = parentElement;
     this.htmlTag = htmlTag;
     this.className = className;
