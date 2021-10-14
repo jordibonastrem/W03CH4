@@ -1,4 +1,4 @@
-import Componente from "./Componente";
+import Componente from "./Componente.js";
 
 class Series extends Componente {
   constructor(parentElement) {
@@ -19,3 +19,5 @@ class Series extends Componente {
     `;
   }
 }
+
+export default Series;
