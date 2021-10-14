@@ -3,16 +3,15 @@ class Componente {
 
   parentElement;
 
-  className;
+  // className;
 
-  htmlTag;
+  // htmlTag;
 
   constructor(parentElement, className, htmlTag = "div") {
-    this.parentElement = parentElement;
-    this.htmlTag = htmlTag;
-    this.className = className;
-
     this.element = document.createElement(htmlTag);
+    this.element.className = className;
+    this.parentElement = parentElement;
+
     this.parentElement.appendChild(this.element);
   }
 }
