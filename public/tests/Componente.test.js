@@ -16,7 +16,6 @@ describe("Given a component class", () => {
 
       // Assert
       expect(pFound).not.toBeNull();
-      // Espero que este div que he creado tenga un elemento que sea un p con clase test
     });
   });
 
@@ -33,7 +32,6 @@ describe("Given a component class", () => {
 
       // Assert
       expect(pFound).not.toBeNull();
-      // Espero que este div que he creado tenga un elemento que sea un p con clase test
     });
   });
 });
