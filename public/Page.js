@@ -21,6 +21,7 @@ class Page extends Componente {
 
     const container = document.querySelector(".main");
     new Form(container);
+    new Series(container);
   }
 }
 
