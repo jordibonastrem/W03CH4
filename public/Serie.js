@@ -1,24 +1,14 @@
-import Componente from "./Componente";
-
-const testobj = {
-  id: 1,
-  name: "The Sopranos",
-  creator: "David Chase",
-  year: 1999,
-  poster:
-    "https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
-  watched: true,
-  score: 5,
-  emmies: 21,
-};
+import Componente from "./Componente.js";
 
 class Serie extends Componente {
-  constructor(parentElement) {
+  series;
+  constructor(parentElement, serie) {
     super(parentElement, "serie", "li");
-    this.generateHtml();
+    this.series = serie;
+    this.generateHtml(serie);
   }
 
-  generateHtml() {
+  generateHtml(serie) {
     this.element.innerHTML = `
                   <li class="serie">
                 <img
@@ -49,3 +39,5 @@ class Serie extends Componente {
               </li>`;
   }
 }
+
+export default Serie;

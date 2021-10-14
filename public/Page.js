@@ -4,9 +4,12 @@ import Form from "./Form.js";
 import Series from "./Series.js";
 
 class Page extends Componente {
-  constructor(parentElement) {
-    super(parentElement, "container");
+  series;
 
+  constructor(parentElement, series) {
+    super(parentElement, "container");
+    this.series = series;
+    console.log(series);
     this.generateHTML();
   }
 
@@ -21,7 +24,7 @@ class Page extends Componente {
 
     const container = document.querySelector(".main");
     new Form(container);
-    new Series(container);
+    new Series(container, this.series);
   }
 }
 

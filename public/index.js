@@ -9,9 +9,8 @@ const body = document.querySelector("body");
 const getSeriesArray = async () => {
   const seriesArray = await new SeriesServices();
   const result = await seriesArray.getSeries();
-  return result;
+
+  new Page(body, result);
 };
 
-console.log(getSeriesArray());
-
-new Page(body);
+getSeriesArray();
