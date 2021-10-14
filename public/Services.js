@@ -9,4 +9,8 @@ class SeriesServices {
   }
 }
 
+// const response = await fetch("http://localhost:3001/series");
+// const series = await response.json();
+// console.log(series);
+
 export default SeriesServices;
